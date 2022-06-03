@@ -14,7 +14,7 @@ public class SamsungTV implements TV {
 
 	@Override
 	public void volumUp() {
-		System.out.println("삼성TV -- 소리를 높힌다");
+		System.out.println("삼성TV -- 소리를 높인다");
 
 	}
 
