@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 @Component ("tv")
 public class SamsungTV implements TV {
 	
-	@Autowired		//Speaker 타입의 객체를 찾아서 DI 주입 시켜준다.
-	@Qualifier("apple") 	//객체 이름을 찾아서 주입을 시켜준다.
+	@Autowired		//Speaker 타입의 객체를 찾아서 DI 주입 시켜 준다. 
+	@Qualifier ("apple")   // 객체 이름을 찾아서 주입을 시켜 준다. 
 	private Speaker speaker;    // Speaker 는 인터페이스 : SonySpeaker, AppleSpeaker
 	private int price ; 			// 정수 변수 선언 
 	

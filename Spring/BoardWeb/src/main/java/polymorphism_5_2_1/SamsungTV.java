@@ -9,9 +9,9 @@ import org.springframework.stereotype.Component;
 @Component ("tv")
 public class SamsungTV implements TV {
 	
-	@Resource (name = "sony")
+	@Resource (name = "sony")   //@Autowired 와 Qualifier를 합친 기능 
 	private Speaker speaker;    // Speaker 는 인터페이스 : SonySpeaker, AppleSpeaker
-	private int price ; 			// 정수 변수 선언 
+	private int price; 			// 정수 변수 선언
 	
 	public SamsungTV() {  //기본 생성자 : 객체가 생성될때 호출 
 		

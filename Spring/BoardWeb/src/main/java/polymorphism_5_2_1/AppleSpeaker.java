@@ -2,7 +2,7 @@ package polymorphism_5_2_1;
 
 import org.springframework.stereotype.Component;
 
-@Component("apple")	// Speaker 타입과 AppleSpeaker 타입 모두 내포
+@Component ("apple")   //Speaker 타입과 AppleSpeaker 모두 내포 
 public class AppleSpeaker implements Speaker {
 	
 	public AppleSpeaker () {

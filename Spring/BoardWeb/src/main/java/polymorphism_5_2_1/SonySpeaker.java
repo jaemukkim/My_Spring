@@ -2,7 +2,7 @@ package polymorphism_5_2_1;
 
 import org.springframework.stereotype.Component;
 
-@Component ("sony") //sony 객체는 Speaker 타입과, SonySpeaker 타입을 모두 내포
+@Component ("sony")  //sony 객체는 Speaker 타입과, SonySpeaker 두 타입을 모두 내포
 public class SonySpeaker implements Speaker {
 	
 	//기본 생성자 
