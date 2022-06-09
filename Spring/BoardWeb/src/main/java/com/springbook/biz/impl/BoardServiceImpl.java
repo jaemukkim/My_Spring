@@ -11,8 +11,12 @@ import com.springbook.biz.common.Log4jAdvice;
 @Service ("boardService")     //비즈니스 로직을 처리하는 클래스 (BoardServiceImpl.java)   
 public class BoardServiceImpl implements BoardService {
 	
-	@Autowired		//객체 주입 
-	private BoardDAO boardDAO;
+	//@Autowired		//객체 주입 
+	//private BoardDAO boardDAO;	//JSP에서 구현한 DAO
+	
+	@Autowired
+	private BoardDAOSpring boardDAO;	//Spring 에서 구현한 DAO
+	
 	
 	//모든 메소드가 실행되기 전에 Log 를 남겨야 한다. 
 //	private LogAdvice log;	//객체 선언
@@ -32,6 +36,7 @@ public class BoardServiceImpl implements BoardService {
 		/*
 		if (vo.getSeq() == 0) {
 			throw new IllegalArgumentException("0번 글은 등록할 수 없습니다.");
+			throw new NumherFormatException("숫자형식의 값이 아닙니다.);
 		}
 		*/
 		

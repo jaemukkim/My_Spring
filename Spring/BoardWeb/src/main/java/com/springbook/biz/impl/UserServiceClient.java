@@ -37,7 +37,7 @@ public class UserServiceClient {
 		
 		//3-2. insert 메소드 호출
 		UserVO Uvo = new UserVO();
-		Uvo.setId("JM5");
+		Uvo.setId("JM6");
 		Uvo.setPassword("1234");
 		Uvo.setName("재묵4");
 		Uvo.setRole("User");		
