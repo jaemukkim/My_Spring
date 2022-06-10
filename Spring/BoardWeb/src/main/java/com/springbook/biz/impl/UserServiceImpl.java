@@ -40,7 +40,9 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public void insertUser(UserVO vo) {
-		userDAO.insertUser(vo);
+		
+		userDAO.insertUser(vo);   //Insert 잘됨
+		//userDAO.insertUser(vo);   //Primary Key 오류 발생 (ID)
 		
 	}
 

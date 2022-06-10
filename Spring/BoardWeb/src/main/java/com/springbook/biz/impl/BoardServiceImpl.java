@@ -40,7 +40,9 @@ public class BoardServiceImpl implements BoardService {
 		}
 		*/
 		
-		boardDAO.insertBoard(vo);
+		boardDAO.insertBoard(vo);   //Insert 잘됨
+		boardDAO.insertBoard(vo);   //Primary key 오류 발생
+		
 	}
 
 	@Override

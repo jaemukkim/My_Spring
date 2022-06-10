@@ -24,7 +24,7 @@ public class BoardServiceClient {
 		BoardVO vo = new BoardVO(); 
 		
 		//vo.setSeq(0);			//강제 예외 발생 코드
-		
+		vo.setSeq(100);
 		vo.setTitle("임시 테스트 제목7");
 		vo.setWriter("홍길동7");
 		vo.setContent("임시 글 내용7 .......");
