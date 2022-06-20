@@ -19,10 +19,16 @@
 			<table border="1" cellpadding="0" cellspacing="0" width="700">
 				<tr>
 					<td align="right"><select name="searchCondition">
-							<option value="TITLE">제목
-							<option value="CONTENT">내용
-					</select> <input name="searchKeyword" type="text" /> <input type="submit"
-						value="검색" /></td>
+					
+						<c:forEach items = "${conditionMap}" var = "option">
+							<option value="${option.value }"> ${option.key }</option>
+						</c:forEach>
+							
+							
+					</select> 
+					
+					<input name="searchKeyword" type="text" />					
+					<input type="submit" value="검색" /></td>
 				</tr>
 			</table>
 		</form>

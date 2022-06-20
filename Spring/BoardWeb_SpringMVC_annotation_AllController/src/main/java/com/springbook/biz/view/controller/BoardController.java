@@ -61,11 +61,14 @@ public class BoardController {
 		Map<String, String> conditionMap = new HashMap<String, String>();
 		conditionMap.put("제목", "TITLE");
 		conditionMap.put("내용", "CONTENT");
+		conditionMap.put("이름", "NAME");
+		conditionMap.put("날짜", "REGDATE");
 		
 		return conditionMap;
 	}	
 	
-		//searchConditionMap()
+		//searchConditionMap() 메소드는 @ModelAttribute 어노테이션이 적용되어 있기 때문에
+		//getBoardList() 보다 먼저 실행된다.
 	
 	//4. 글 상세 검색
 	@RequestMapping ("/getBoard.do")

@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app>
 
+<welcome-file-list>
+	<welcome-file>index.jsp</welcome-file>
+	<welcome-file>default.jsp</welcome-file>
+</welcome-file-list>
+
   
 <!--  DispatcherServlet 설정 <<시작>>  -->
   <servlet>
@@ -27,6 +32,23 @@
 		<param-name>encoding</param-name>
 		<param-value>EUC-KR</param-value>	
 	</init-param>
+	
+<context-param>
+	<param-value>contextConfigLocation</param-value>
+	<param-value>classpath:applicationContext.xml</param-value>
+</context-param>	
+
+<listener>
+	<listener-class>
+		org.springframework.web.context.ContextLoaderListener
+</listener-class>
+</listener>
+
+<context-param>
+	<param-name>contextConfigLocation</param-name>
+	<param-name>classpath:applicationContext.xml</param-name>
+</context-param>
+
 
 </filter>
 

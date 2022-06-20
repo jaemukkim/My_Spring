@@ -6,11 +6,12 @@ import javax.servlet.http.HttpServletResponse;
 import com.springbook.biz.board.BoardVO;
 import com.springbook.biz.board.impl.BoardDAO;
 
+
 public class UpdateBoardController implements Controller {
 
 	@Override
 	public String handlerRequest(HttpServletRequest request, HttpServletResponse response) {
-		System.out.println("글 수정 처리");
+		System.out.println("글 수정 처리 - MVC Framework - Controller 호출");
 		
 		// 1. 사용자 입력 정보 추출
 		// request.setCharacterEncoding("EUC-KR");
