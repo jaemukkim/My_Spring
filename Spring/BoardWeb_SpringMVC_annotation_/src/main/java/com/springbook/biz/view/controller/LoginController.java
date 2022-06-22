@@ -1,13 +1,13 @@
 package com.springbook.biz.view.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.Controller;
 
 import com.springbook.biz.user.UserVO;
 import com.springbook.biz.user.impl.UserDAO;
 
-@org.springframework.stereotype.Controller
+@Controller
 public class LoginController {
 
 	@RequestMapping("login.do")
