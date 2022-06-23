@@ -20,6 +20,8 @@ public class GetBoardListController  {
 	public ModelAndView getBoardList(BoardVO vo, BoardDAO boardDAO, ModelAndView mav) {
 		System.out.println("글 목록 검색 처리 -- Spring MVC 어노테이션 작동 ");
 
+		System.out.println("VO로 자동으로 넘어오는 값 : " + vo.getSeq());
+		
 		mav.addObject("boardList", boardDAO.getBoardList(vo)); 
 		mav.setViewName("getBoardList.jsp");  //forward로 이동 됨
 		return mav ; 

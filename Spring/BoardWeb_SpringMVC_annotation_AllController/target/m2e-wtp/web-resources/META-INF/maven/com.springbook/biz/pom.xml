@@ -31,6 +31,7 @@
 		    <artifactId>ojdbc7</artifactId>
 		    <version>12.1.0.2</version>
 		</dependency>
+		
 	
 	<!--H2 DB 라이브러리 등록  -->
 		<dependency> 
