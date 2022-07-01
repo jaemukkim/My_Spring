@@ -20,7 +20,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/kim/eclipse/java-2022-03/eclipse/lombok.jar">
+	<classpathentry kind="lib" path="C:/Users/kosmo/eclipse/java-2021-09/eclipse/lombok.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>

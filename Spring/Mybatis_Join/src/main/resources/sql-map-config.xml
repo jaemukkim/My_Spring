@@ -4,20 +4,20 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 
-	
+	 
 	<typeAliases>
-		<typeAlias type="com.springbook.biz.board.BoardVO" alias="board"/>
+		<typeAlias type="com.springbook.biz.board.BoardVO" alias="board"></typeAlias>
 		<typeAlias type="com.springbook.biz.user.UserVO" alias="user"/>	
 		<typeAlias type="com.mybatis.join.vo.DepartmentVO" alias="dept"/>
-		<typeAlias type="com.mybatis.join.vo.EmployeeVO" alias="emp"/>	
-		<typeAlias type="com.mybatis.join.vo.JoinVO" alias="joinvo"/>	
+		<typeAlias type="com.mybatis.join.vo.EmployeeVO" alias="emp"/>
+		<typeAlias type="com.mybatis.join.vo.JoinVO" alias ="joinvo"/>
+		<typeAlias type="com.mybatis.join.vo.EnD_VO" alias ="end_vo"/>
 	</typeAliases>
-	 
 	
-	
+
 	<mappers>
 		<mapper resource="mappings/board-mapping.xml" />
-		<mapper resource="mappings/user-mapping.xml"/>	
-		<mapper resource="mappings/join-mapping.xml"/>	
+		<mapper resource="mappings/user-mapping.xml" />	
+		<mapper resource="mappings/join-mapping.xml" /> 
 	</mappers>
 </configuration>

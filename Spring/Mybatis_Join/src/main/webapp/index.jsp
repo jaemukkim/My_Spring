@@ -8,7 +8,11 @@
 </head>
 <body>
 
-<a href = "http://localhost:9191/join/joinList.do">조인 테이블 출력 </a>
-
+	
+ <a href = "http://localhost:9292/join/joinList.do ">
+ 조인 테이블 출력  (resultMap 사용) </a>
+<p> <p>
+ <a href = "http://localhost:9292/join/joinList2.do ">
+ 조인 테이블 출력2 (resultType 사용)  </a>
 </body>
 </html>

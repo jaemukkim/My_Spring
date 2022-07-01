@@ -3,19 +3,16 @@ package com.mybatis.join.vo;
 
 public class JoinVO {
 	
-	private EmployeeVO empJ;
+	private EmployeeVO empJ; 
 	private DepartmentVO deptJ;
 	
+	public JoinVO () {}
 	
-	public JoinVO() {}
-	
-
 	public JoinVO(EmployeeVO empJ, DepartmentVO deptJ) {
 		super();
 		this.empJ = empJ;
 		this.deptJ = deptJ;
 	}
-
 
 	public EmployeeVO getEmpJ() {
 		return empJ;
@@ -32,6 +29,8 @@ public class JoinVO {
 	public void setDeptJ(DepartmentVO deptJ) {
 		this.deptJ = deptJ;
 	}
+
+
 
 	@Override
 	public String toString() {
